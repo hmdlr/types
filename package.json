@@ -2,12 +2,13 @@
   "name": "@hmdlr/types",
   "version": "1.1.13",
   "description": "Core types for Starphish",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
     "build": "tsc -p tsconfig.json",
     "test": "echo \"Error: no test specified\" && exit 1",
     "release": "standard-version && git push --follow-tags && npm publish",
-    "clean": "rm -rf build"
+    "clean": "rm -rf dist"
   },
   "keywords": [],
   "author": "cristi@starphish.app",
@@ -17,11 +18,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://me.github.com/cristimc8/hmdlr-types",
-    "directory": "build"
+    "url": "git+https://me.github.com/cristimc8/hmdlr-types"
   },
   "files": [
-    "build"
+    "dist"
   ],
   "devDependencies": {
     "standard-version": "^9.5.0",

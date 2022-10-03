@@ -6,7 +6,7 @@
     "typeRoots": [
       "./node_modules/@types",
     ],
-    "outDir": "build",
+    "outDir": "dist",
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
     "experimentalDecorators": true,
@@ -26,6 +26,6 @@
   "exclude": [
     "node_modules",
     "tests",
-    "build"
+    "dist"
   ]
 }
