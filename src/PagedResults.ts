@@ -1,4 +1,4 @@
-import { SortDirection } from './SortDirection.js';
+import { SortDirection } from './SortDirection';
 
 export class PagedResults<T> {
   private _count?: number;
