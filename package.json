@@ -1,16 +1,18 @@
 {
   "name": "@hmdlr/types",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Core types for Starphish",
   "main": "index.js",
   "scripts": {
     "build": "tsc -p tsconfig.json",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "release": "standard-version && git push --follow-tags && npm publish"
   },
   "keywords": [],
   "author": "cristi@starphish.app",
   "license": "ISC",
   "devDependencies": {
+    "standard-version": "^9.5.0",
     "typescript": "^4.8.4"
   },
   "peerDependencies": {
