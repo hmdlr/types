@@ -1,5 +1,5 @@
 export class UUID {
-  private id: string;
+  id: string;
 
   constructor(id: string) {
     if (UUID.isValid(id)) {
