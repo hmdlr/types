@@ -24,7 +24,7 @@
     "declaration": true
   },
   "include": [
-    "./src",
+    "./build",
   ],
   "exclude": [
     "node_modules",
