@@ -1,6 +1,6 @@
-import { PagedResults } from './PagedResults';
-import { SortDirection } from './SortDirection';
-import { UUID } from './UUID';
+import { PagedResults } from './PagedResults.js';
+import { SortDirection } from './SortDirection.js';
+import { UUID } from './UUID.js';
 
 export {
   PagedResults,
