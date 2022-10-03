@@ -1,21 +1,21 @@
 {
   "compilerOptions": {
     "target": "es2017",
-    "lib": [
-      "es2017",
-      "esnext.asynciterable"
-    ],
+    "lib": ["es6", "es5"],
     "typeRoots": [
       "./node_modules/@types",
     ],
     "allowSyntheticDefaultImports": true,
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
-    "forceConsistentCasingInFileNames": true,
-    "moduleResolution": "node",
-    "module": "ES2020",
-    "pretty": true,
+    "removeComments": true,
     "sourceMap": true,
+    "noLib": false,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "moduleResolution": "node",
+    "module": "commonjs",
+    "pretty": true,
     "outDir": "./build",
     "allowJs": true,
     "noEmit": false,
