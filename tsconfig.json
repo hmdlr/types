@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "module": "commonjs",
     "target": "es2017",
     "lib": ["es6", "es5"],
     "typeRoots": [
@@ -14,9 +15,8 @@
     "forceConsistentCasingInFileNames": true,
     "resolveJsonModule": true,
     "moduleResolution": "node",
-    "module": "commonjs",
     "pretty": true,
-    "outDir": "./build",
+    "outDir": "build",
     "allowJs": true,
     "noEmit": false,
     "esModuleInterop": true,
@@ -24,7 +24,8 @@
     "declaration": true
   },
   "include": [
-    "./build",
+    "src/**/*",
+    "build/**/*",
   ],
   "exclude": [
     "node_modules",
