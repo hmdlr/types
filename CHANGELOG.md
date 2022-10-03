@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.2.0](https://me.github.com/cristimc8/hmdlr-types/compare/v1.1.14...v1.2.0) (2022-10-03)
+
+
+### Features
+
+* add UUID ([9e23b4b](https://me.github.com/cristimc8/hmdlr-types/commit/9e23b4bd718b99d45d64ac005f083d6a3e6940fd))
+
 ### [1.1.14](https://me.github.com/cristimc8/hmdlr-types/compare/v1.1.13...v1.1.14) (2022-10-03)
 
 ### [1.1.13](https://me.github.com/cristimc8/hmdlr-types/compare/v1.1.12...v1.1.13) (2022-10-03)
