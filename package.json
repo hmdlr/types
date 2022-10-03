@@ -1,6 +1,6 @@
 {
   "name": "@hmdlr/types",
-  "version": "1.1.9",
+  "version": "1.1.10",
   "description": "Core types for Starphish",
   "main": "index.js",
   "scripts": {
