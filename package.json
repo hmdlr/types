@@ -17,7 +17,8 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://me.github.com/cristimc8/hmdlr-types"
+    "url": "git+https://me.github.com/cristimc8/hmdlr-types",
+    "directory": "src"
   },
   "devDependencies": {
     "standard-version": "^9.5.0",
