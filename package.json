@@ -20,6 +20,9 @@
     "url": "git+https://me.github.com/cristimc8/hmdlr-types",
     "directory": "src"
   },
+  "files": [
+    "build"
+  ],
   "devDependencies": {
     "standard-version": "^9.5.0",
     "typescript": "^4.8.4"
