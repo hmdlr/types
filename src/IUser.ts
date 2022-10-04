@@ -1,7 +1,7 @@
 import { UUID } from './UUID';
 import { Email } from './Email';
 
-export interface User {
+export interface IUser {
   id: UUID;
   username: string;
   email: Email;

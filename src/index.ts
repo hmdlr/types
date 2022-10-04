@@ -1,7 +1,7 @@
 import { Email } from './Email';
 import { PagedResults } from './PagedResults';
 import { SortDirection } from './SortDirection';
-import { User } from './User';
+import { IUser } from './IUser';
 import { UUID } from './UUID';
 
 export {
@@ -9,5 +9,5 @@ export {
   SortDirection,
   UUID,
   Email,
-  User
+  IUser
 };
