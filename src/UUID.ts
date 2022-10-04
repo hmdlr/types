@@ -1,9 +1,13 @@
 export class UUID {
-  id: string;
+  private readonly _id: string;
+
+  get id(): string {
+    return this._id;
+  }
 
   constructor(id: string) {
     if (UUID.isValid(id)) {
-      this.id = id;
+      this._id = id;
     } else {
       throw new Error(`${id} is an invalid UUID!`);
     }
