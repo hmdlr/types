@@ -2,6 +2,8 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.2.16](https://me.github.com/cristimc8/hmdlr-types/compare/v1.2.15...v1.2.16) (2022-10-06)
+
 ### [1.2.15](https://me.github.com/cristimc8/hmdlr-types/compare/v1.2.14...v1.2.15) (2022-10-06)
 
 ### [1.2.14](https://me.github.com/cristimc8/hmdlr-types/compare/v1.2.13...v1.2.14) (2022-10-06)
