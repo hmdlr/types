@@ -9,9 +9,9 @@ export class PagedResults<T> {
 
   private _pageSize: number;
 
-  private _sortBy: Array<keyof T>;
+  private _sortBy?: Array<keyof T>;
 
-  private _sortDir: Array<SortDirection>;
+  private _sortDir?: Array<SortDirection>;
 
   private _items: Array<T>;
 
@@ -28,7 +28,7 @@ export class PagedResults<T> {
   }
 
   sort(columns: (keyof T)[], directions: SortDirection[]): void {
-    this._sortBy = columns || [];
+    this._sortBy = columns;
     this._sortDir = directions || [SortDirection.Asc];
   }
 
