@@ -28,8 +28,8 @@ export class PagedResults<T> {
   }
 
   sort(columns: (keyof T)[], directions: SortDirection[]): void {
-    this._sortBy = columns;
-    this._sortDir = directions;
+    this._sortBy = columns || [];
+    this._sortDir = directions || [SortDirection.Asc];
   }
 
   get sortBy(): Array<keyof T> {
