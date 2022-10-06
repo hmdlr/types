@@ -29,7 +29,10 @@ export class PagedResults<T> {
 
   sort(columns: (keyof T)[], directions: SortDirection[]): void {
     this._sortBy = columns;
-    this._sortDir = directions;
+    this._sortDir = [
+      ...directions,
+      ...Array(columns.length - directions.length).fill(SortDirection.Asc),
+    ];
   }
 
   get sortBy(): Array<keyof T> {
