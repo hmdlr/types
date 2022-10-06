@@ -27,11 +27,13 @@ export class PagedResults<T> {
     return this._pageCount;
   }
 
-  sort(columns: (keyof T)[], directions: SortDirection[]): void {
-    this._sortBy = columns;
+  sort(columns?: (keyof T)[], directions?: SortDirection[]): void {
+    this._sortBy = columns || [];
     this._sortDir = [
-      ...directions,
-      ...Array(columns.length - directions.length).fill(SortDirection.Asc),
+      ...directions || [],
+      ...Array(
+        (columns.length || 0) - (directions.length || 0)
+      ).fill(SortDirection.Asc),
     ];
   }
 
