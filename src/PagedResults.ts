@@ -28,22 +28,8 @@ export class PagedResults<T> {
   }
 
   sort(columns: (keyof T)[], directions: SortDirection[]): void {
-    this._items.sort((a, b) => {
-      for (let i = 0; i < columns.length; i++) {
-        const sort = columns[i];
-        const dir = directions?.[i] || SortDirection.Asc;
-        if (!a[sort] || !b[sort]) {
-          return 0;
-        }
-        if (a[sort] < b[sort]) {
-          return dir === SortDirection.Asc ? -1 : 1;
-        }
-        if (a[sort] > b[sort]) {
-          return dir === SortDirection.Asc ? 1 : -1;
-        }
-      }
-      return 0;
-    });
+    this._sortBy = columns;
+    this._sortDir = directions;
   }
 
   get sortBy(): Array<keyof T> {
