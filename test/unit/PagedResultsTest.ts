@@ -13,4 +13,7 @@ describe('#PagedResults Test', () => {
   it('should return the correct page count', () => {
     expect(pagedResults.pageCount).to.be.eql(Math.ceil(data.books.length / 3));
   });
+  it('should return the correct count', () => {
+    expect(pagedResults.count).to.be.eql(data.books.length);
+  });
 });
