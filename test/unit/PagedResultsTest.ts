@@ -1,5 +1,5 @@
-import { expect } from 'chai';
 import * as data from './resources.json';
+import { expect } from 'chai';
 import { PagedResults, SortDirection } from '../../src';
 
 describe('#PagedResults Test', () => {
