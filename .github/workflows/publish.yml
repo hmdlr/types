@@ -1,0 +1,19 @@
+# a workflow that sends a telegram message when a new release is published
+name: Release Announcement
+on:
+  release:
+    types: [published]
+
+jobs:
+  release-announcement:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Release Announcement
+        uses: appleboy/telegram-action@master
+        with:
+          to: ${{ secrets.TELEGRAM_TO }}
+          token: ${{ secrets.TELEGRAM_TOKEN }}
+          message: |
+            By [${{ github.actor }}]
+            🌩New types published🌩: ${{ github.event.release.tag_name }}
+            ${{ github.event.release.html_url }}
