@@ -1,7 +1,7 @@
 {
   "name": "@hmdlr/types",
   "version": "1.2.21",
-  "description": "Core types for Starphish",
+  "description": "Core types for StarPhish",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
