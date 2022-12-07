@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.2.19](https://me.github.com/cristimc8/hmdlr-types/compare/v1.2.18...v1.2.19) (2022-12-07)
+
+
+### Bug Fixes
+
+* fix `PagedResults` type with tested version ([daf21e5](https://me.github.com/cristimc8/hmdlr-types/commit/daf21e51765cefc26df9130f7179b2516c6f0ee3))
+
 ### [1.2.18](https://me.github.com/cristimc8/hmdlr-types/compare/v1.2.17...v1.2.18) (2022-10-06)
 
 ### [1.2.17](https://me.github.com/cristimc8/hmdlr-types/compare/v1.2.16...v1.2.17) (2022-10-06)
