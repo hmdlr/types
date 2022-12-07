@@ -21,6 +21,7 @@ export class PagedResults<T> {
 
   set count(count: number | undefined) {
     this._count = count;
+    this.calculatePageCount();
   }
 
   get pageCount(): number | undefined {
@@ -33,7 +34,8 @@ export class PagedResults<T> {
       ...directions || [],
       ...Array(
         (columns.length || 0) - (directions.length || 0)
-      ).fill(SortDirection.Asc),
+      )
+        .fill(SortDirection.Asc),
     ];
   }
 
@@ -73,7 +75,7 @@ export class PagedResults<T> {
     return this._items.slice(start, end);
   }
 
-  private set items(items: Array<T>) {
+  set items(items: Array<T>) {
     this._items = items;
   }
 
@@ -92,9 +94,8 @@ export class PagedResults<T> {
     const results = new PagedResults<A>();
     results.items = arr;
     results.pageNumber = pageNumber || 1;
-    results.pageSize = pageSize || 50;
+    results.pageSize = pageSize || 3;
     results.count = count || arr.length;
-    results.calculatePageCount();
     return results;
   }
 }
