@@ -1,8 +1,9 @@
 # a workflow that sends a telegram message when a new release is published
 name: Release Announcement
 on:
-  release:
-    types: [published]
+  push:
+    branches:
+      - main
 
 jobs:
   release-announcement:
