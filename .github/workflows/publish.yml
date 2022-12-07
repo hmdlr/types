@@ -6,6 +6,12 @@ on:
       - main
 
 jobs:
+  get_package_version:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: cat package.json | jq -r .version
+        id: package_version
   release-announcement:
     runs-on: ubuntu-latest
     steps:
@@ -15,6 +21,5 @@ jobs:
           to: ${{ secrets.TELEGRAM_TO }}
           token: ${{ secrets.TELEGRAM_TOKEN }}
           message: |
-            By [${{ github.actor }}]
-            🌩New types published🌩: ${{ github.event.release.tag_name }}
+            🌩New types published🌩: ${{ steps.get_package_version.outputs.package_version }}
             ${{ github.event.release.html_url }}
