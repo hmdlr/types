@@ -1,6 +1,6 @@
-import { expect } from 'chai';
 import * as data from './resources.json';
-import { PagedResults, SortDirection } from '../../src';
+import { expect } from 'chai';
+import { PagedResults } from '../../src';
 
 describe('#PagedResults Test', () => {
   const pagedResults = PagedResults.fromArray(data.books, 1, 3);
