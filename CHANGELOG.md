@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.3.2](https://me.github.com/cristimc8/hmdlr-types/compare/v1.3.1...v1.3.2) (2022-12-10)
+
+
+### Bug Fixes
+
+* make `buildPagedResults` stable to use for any input ([#15](https://me.github.com/cristimc8/hmdlr-types/issues/15)) ([f83e005](https://me.github.com/cristimc8/hmdlr-types/commit/f83e0054eb9b392d266911525c4664525f3d0ba1))
+
 ### [1.3.1](https://me.github.com/cristimc8/hmdlr-types/compare/v1.3.0...v1.3.1) (2022-12-08)
 
 ## [1.3.0](https://me.github.com/cristimc8/hmdlr-types/compare/v1.2.26...v1.3.0) (2022-12-08)
