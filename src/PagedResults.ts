@@ -33,10 +33,11 @@ export class PagedResults<T> {
     this._sortDir = [
       ...directions || [],
       ...Array(
-        (columns.length || 0) - (directions.length || 0)
-      )
-        .fill(SortDirection.Asc),
+        Math.max(((columns.length || 0) - (directions.length || 0)), 0)
+      ).fill(SortDirection.Asc),
     ];
+    // reduce sortDir to have the same length as sortBy
+    this._sortDir = this._sortDir.slice(0, this._sortBy.length);
   }
 
   get sortBy(): Array<keyof T> {
