@@ -1,10 +1,7 @@
-import { UUID } from './UUID';
-import { Email } from './Email';
-
 export interface IUser {
-  id: UUID;
+  id: string;
   username: string;
-  email: Email;
+  email: string;
   name: string;
   picture: string;
 }
