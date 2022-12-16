@@ -4,6 +4,7 @@ import { SortDirection } from './SortDirection';
 import { IUser } from './IUser';
 import { UUID } from './UUID';
 import { buildPagedResults } from './PagedRequest';
+import { IFile } from './IFile';
 
 export {
   PagedResults,
@@ -11,5 +12,6 @@ export {
   SortDirection,
   UUID,
   Email,
-  IUser
+  IUser,
+  IFile
 };
