@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.4.0](https://me.github.com/cristimc8/hmdlr-types/compare/v1.3.6...v1.4.0) (2022-12-17)
+
+
+### Features
+
+* add ImageType enum ([198fbbc](https://me.github.com/cristimc8/hmdlr-types/commit/198fbbca8084e31fd8c3201bda90f20dd7688e0f))
+
 ### [1.3.6](https://me.github.com/cristimc8/hmdlr-types/compare/v1.3.5...v1.3.6) (2022-12-16)
 
 ### [1.3.5](https://me.github.com/cristimc8/hmdlr-types/compare/v1.3.4...v1.3.5) (2022-12-11)
