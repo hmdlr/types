@@ -1,10 +1,11 @@
 import { Email } from './Email';
 import { PagedResults } from './PagedResults';
-import { SortDirection } from './SortDirection';
+import { SortDirection } from './enums/SortDirection';
 import { IUser } from './IUser';
 import { UUID } from './UUID';
 import { buildPagedResults } from './PagedRequest';
 import { IFile } from './IFile';
+import { ImageType } from './enums/ImageType';
 
 export {
   PagedResults,
@@ -13,5 +14,6 @@ export {
   UUID,
   Email,
   IUser,
-  IFile
+  IFile,
+  ImageType
 };

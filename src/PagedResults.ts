@@ -1,4 +1,4 @@
-import { SortDirection } from './SortDirection';
+import { SortDirection } from './enums/SortDirection';
 
 export class PagedResults<T> {
   private _count?: number;

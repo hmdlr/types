@@ -1,6 +1,6 @@
 import { Request } from 'express';
 import { PagedResults } from './PagedResults';
-import { SortDirection } from './SortDirection';
+import { SortDirection } from './enums/SortDirection';
 
 /**
  * Builds a PagedResults object from the request.
