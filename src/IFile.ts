@@ -8,6 +8,10 @@ export interface IFile {
    */
   name: string;
   /**
+   * The path to the file on the server
+   */
+  path: string;
+  /**
    * The mime type of the file
    */
   mimeType: string;
