@@ -6,6 +6,7 @@ import { UUID } from './UUID';
 import { buildPagedResults } from './PagedRequest';
 import { IFile } from './IFile';
 import { ImageType } from './enums/ImageType';
+import { AuthenticatedRequest } from './AuthenticatedRequest';
 
 export {
   PagedResults,
@@ -15,5 +16,6 @@ export {
   Email,
   IUser,
   IFile,
-  ImageType
+  ImageType,
+  AuthenticatedRequest
 };
