@@ -7,6 +7,7 @@ import { buildPagedResults } from './PagedRequest';
 import { IFile } from './IFile';
 import { ImageType } from './enums/ImageType';
 import { AuthenticatedRequest } from './AuthenticatedRequest';
+import { IGroup } from './IGroup';
 
 export {
   PagedResults,
@@ -16,6 +17,7 @@ export {
   Email,
   IUser,
   IFile,
+  IGroup,
   ImageType,
   AuthenticatedRequest
 };
