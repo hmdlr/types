@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.1.0](https://me.github.com/cristimc8/hmdlr-types/compare/v2.0.1...v2.1.0) (2023-01-02)
+
+
+### Features
+
+* add `IGroup` ([17be923](https://me.github.com/cristimc8/hmdlr-types/commit/17be92374867ad93d0ddac8b388944b1ffa4071b))
+
 ### [2.0.1](https://me.github.com/cristimc8/hmdlr-types/compare/v2.0.0...v2.0.1) (2022-12-30)
 
 ## [2.0.0](https://me.github.com/cristimc8/hmdlr-types/compare/v1.4.0...v2.0.0) (2022-12-30)
