@@ -7,7 +7,7 @@
   "scripts": {
     "build": "tsc -p tsconfig.json",
     "test": "mocha --inline-diffs --reporter=list test/unit/**/*.ts",
-    "release": "standard-version && git push --follow-tags && npm publish",
+    "release": "npm run build && standard-version && git push --follow-tags && npm publish",
     "clean": "rm -rf dist"
   },
   "keywords": [],
