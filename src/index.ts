@@ -8,6 +8,7 @@ import { IFile } from './IFile';
 import { ImageType } from './enums/ImageType';
 import { AuthenticatedRequest } from './AuthenticatedRequest';
 import { IGroup } from './IGroup';
+import { StarClient } from './StarClient';
 
 export {
   PagedResults,
@@ -19,5 +20,6 @@ export {
   IFile,
   IGroup,
   ImageType,
-  AuthenticatedRequest
+  AuthenticatedRequest,
+  StarClient
 };
