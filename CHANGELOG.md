@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.2.0](https://me.github.com/cristimc8/hmdlr-types/compare/v2.1.1...v2.2.0) (2023-01-15)
+
+
+### Features
+
+* add StarClient to types ([443f9b7](https://me.github.com/cristimc8/hmdlr-types/commit/443f9b75de9eb02954a44d7ff24578462fdae323))
+
 ### [2.1.1](https://me.github.com/cristimc8/hmdlr-types/compare/v2.1.0...v2.1.1) (2023-01-03)
 
 ## [2.1.0](https://me.github.com/cristimc8/hmdlr-types/compare/v2.0.1...v2.1.0) (2023-01-02)
