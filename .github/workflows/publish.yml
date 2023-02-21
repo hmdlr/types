@@ -102,6 +102,6 @@ jobs:
           to: ${{ secrets.TELEGRAM_TO }}
           token: ${{ secrets.TELEGRAM_TOKEN }}
           message: |
-            😼New utils artifact published😼
+            😼New types artifact published😼
             Artifact: ${{ env.PACKAGE_NAME }}@${{ env.PACKAGE_VERSION }}
             🚨${{ github.event.commits[0].message }}🚨
