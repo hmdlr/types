@@ -9,6 +9,7 @@ import { ImageType } from './enums/ImageType';
 import { AuthenticatedRequest } from './AuthenticatedRequest';
 import { IGroup } from './IGroup';
 import { StarClient } from './StarClient';
+import { IUrlRequest, IUrlResponse } from './UrlInfo';
 
 export {
   PagedResults,
@@ -21,5 +22,7 @@ export {
   IGroup,
   ImageType,
   AuthenticatedRequest,
-  StarClient
+  StarClient,
+  IUrlRequest,
+  IUrlResponse
 };
