@@ -23,6 +23,6 @@ export {
   ImageType,
   AuthenticatedRequest,
   StarClient,
-  IUrlRequest,
-  IUrlResponse
+  IUrlResponse,
+  IUrlRequest
 };
