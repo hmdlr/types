@@ -10,6 +10,7 @@ import { AuthenticatedRequest } from './AuthenticatedRequest';
 import { IGroup } from './IGroup';
 import { StarClient } from './StarClient';
 import { IUrlRequest, IUrlResponse } from './UrlInfo';
+import { IWebsiteResult } from './IWebsiteResult';
 
 export {
   PagedResults,
@@ -24,5 +25,6 @@ export {
   AuthenticatedRequest,
   StarClient,
   IUrlResponse,
-  IUrlRequest
+  IUrlRequest,
+  IWebsiteResult
 };
