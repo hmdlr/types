@@ -13,6 +13,7 @@ import { IUrlRequest, IUrlResponse } from './UrlInfo';
 import { IWebsiteResult } from './IWebsiteResult';
 import { IBrand } from './brands/IBrand';
 import { IBrandSummary } from './brands/IBrandSummary';
+import { IBrandCreatePayload } from './brands/IBrandCreatePayload';
 
 export {
   PagedResults,
@@ -30,5 +31,6 @@ export {
   IUrlRequest,
   IWebsiteResult,
   IBrand,
-  IBrandSummary
+  IBrandSummary,
+  IBrandCreatePayload
 };
