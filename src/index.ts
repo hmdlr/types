@@ -11,7 +11,8 @@ import { IGroup } from './IGroup';
 import { StarClient } from './StarClient';
 import { IUrlRequest, IUrlResponse } from './UrlInfo';
 import { IWebsiteResult } from './IWebsiteResult';
-import { IBrand } from './IBrand';
+import { IBrand } from './brands/IBrand';
+import { IBrandSummary } from './brands/IBrandSummary';
 
 export {
   PagedResults,
@@ -28,5 +29,6 @@ export {
   IUrlResponse,
   IUrlRequest,
   IWebsiteResult,
-  IBrand
+  IBrand,
+  IBrandSummary
 };
