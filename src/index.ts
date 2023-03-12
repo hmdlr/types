@@ -17,6 +17,8 @@ import { IBrandCreatePayload } from './brands/IBrandCreatePayload';
 import { Resource } from './protectedResources/Resource';
 import { ResourceCreationPayload } from './protectedResources/ResourceCreationPayload';
 import { ResourceCheckPayload } from './protectedResources/ResourceCheckPayload';
+import { IConfig } from './configs/IConfig';
+import { IConfigCreatePayload } from './configs/IConfigCreatePayload';
 
 export {
   PagedResults,
@@ -38,5 +40,7 @@ export {
   IBrandCreatePayload,
   Resource,
   ResourceCreationPayload,
-  ResourceCheckPayload
+  ResourceCheckPayload,
+  IConfig,
+  IConfigCreatePayload
 };
