@@ -28,7 +28,7 @@ export interface IFile {
    */
   updatedAt: Date;
   /**
-   * The owner of the file
+   * The original uploader of the file
    */
-  ownerId: string;
+  uploaderId: string;
 }
