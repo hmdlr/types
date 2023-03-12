@@ -16,6 +16,7 @@ import { IBrandSummary } from './brands/IBrandSummary';
 import { IBrandCreatePayload } from './brands/IBrandCreatePayload';
 import { Resource } from './protectedResources/Resource';
 import { ResourceCreationPayload } from './protectedResources/ResourceCreationPayload';
+import { ResourceCheckPayload } from './protectedResources/ResourceCheckPayload';
 
 export {
   PagedResults,
@@ -36,5 +37,6 @@ export {
   IBrandSummary,
   IBrandCreatePayload,
   Resource,
-  ResourceCreationPayload
+  ResourceCreationPayload,
+  ResourceCheckPayload
 };
