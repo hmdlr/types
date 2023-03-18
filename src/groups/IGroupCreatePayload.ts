@@ -1,5 +1,5 @@
 export interface IGroupCreatePayload {
-  name: string;
   ownerId: string
+  name?: string;
   description?: string;
 }
