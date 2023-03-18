@@ -17,6 +17,7 @@ import { IBrandCreatePayload } from './brands/IBrandCreatePayload';
 import { Resource } from './protectedResources/Resource';
 import { ResourceCreationPayload } from './protectedResources/ResourceCreationPayload';
 import { ResourceCheckPayload } from './protectedResources/ResourceCheckPayload';
+import { ResourceSharePayload } from './protectedResources/ResourceSharePayload';
 import { IConfig } from './configs/IConfig';
 import { IConfigCreatePayload } from './configs/IConfigCreatePayload';
 import { ConflictError } from './errors/ConflictError';
@@ -46,6 +47,7 @@ export {
   Resource,
   ResourceCreationPayload,
   ResourceCheckPayload,
+  ResourceSharePayload,
   IConfig,
   IConfigCreatePayload,
   ConflictError,
