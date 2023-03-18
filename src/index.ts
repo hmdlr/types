@@ -23,6 +23,7 @@ import { ConflictError } from './errors/ConflictError';
 import { NotFoundError } from './errors/NotFoundError';
 import { AuthError } from './errors/AuthError';
 import { UnexpectedError } from './errors/UnexpectedError';
+import { ValidationError } from './errors/ValidationError';
 
 export {
   PagedResults,
@@ -50,5 +51,6 @@ export {
   ConflictError,
   NotFoundError,
   AuthError,
-  UnexpectedError
+  UnexpectedError,
+  ValidationError
 };
