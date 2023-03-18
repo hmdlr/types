@@ -7,7 +7,7 @@ import { buildPagedResults } from './PagedRequest';
 import { IFile } from './storage/IFile';
 import { ImageType } from './enums/ImageType';
 import { AuthenticatedRequest } from './AuthenticatedRequest';
-import { IGroup } from './IGroup';
+import { IGroup } from './groups/IGroup';
 import { StarClient } from './StarClient';
 import { IUrlRequest, IUrlResponse } from './UrlInfo';
 import { IWebsiteResult } from './IWebsiteResult';
@@ -25,6 +25,7 @@ import { NotFoundError } from './errors/NotFoundError';
 import { AuthError } from './errors/AuthError';
 import { UnexpectedError } from './errors/UnexpectedError';
 import { ValidationError } from './errors/ValidationError';
+import { IGroupCreatePayload } from './groups/IGroupCreatePayload';
 
 export {
   PagedResults,
@@ -54,5 +55,6 @@ export {
   NotFoundError,
   AuthError,
   UnexpectedError,
-  ValidationError
+  ValidationError,
+  IGroupCreatePayload
 };
