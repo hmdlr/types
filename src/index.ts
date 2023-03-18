@@ -19,6 +19,10 @@ import { ResourceCreationPayload } from './protectedResources/ResourceCreationPa
 import { ResourceCheckPayload } from './protectedResources/ResourceCheckPayload';
 import { IConfig } from './configs/IConfig';
 import { IConfigCreatePayload } from './configs/IConfigCreatePayload';
+import { ConflictError } from './errors/ConflictError';
+import { NotFoundError } from './errors/NotFoundError';
+import { AuthError } from './errors/AuthError';
+import { UnexpectedError } from './errors/UnexpectedError';
 
 export {
   PagedResults,
@@ -42,5 +46,9 @@ export {
   ResourceCreationPayload,
   ResourceCheckPayload,
   IConfig,
-  IConfigCreatePayload
+  IConfigCreatePayload,
+  ConflictError,
+  NotFoundError,
+  AuthError,
+  UnexpectedError
 };
