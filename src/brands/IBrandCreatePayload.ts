@@ -8,4 +8,5 @@ export interface IBrandCreatePayload extends IBrand {
   name: string;
   title: string;
   keywords: string[];
+  configId: string
 }
