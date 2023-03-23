@@ -1,9 +1,8 @@
 import { IBrand } from './IBrand';
 
-export interface IBrandCreatePayload extends IBrand {
+export interface IBrandCreatePayload extends Partial<IBrand> {
   domain: string;
   id: string;
-  logo: string;
   name: string;
   title: string;
   keywords: string[];
