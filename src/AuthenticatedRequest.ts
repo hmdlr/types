@@ -7,3 +7,7 @@ export type AuthenticatedRequest = Request & {
     bearer: string
   }
 };
+
+export type WithClient<T> = AuthenticatedRequest & {
+  client: T
+};

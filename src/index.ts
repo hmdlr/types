@@ -8,7 +8,7 @@ import { IFile } from './storage/IFile';
 import { ImageType } from './enums/ImageType';
 import { AuthenticatedRequest } from './AuthenticatedRequest';
 import { IGroup } from './groups/IGroup';
-import { StarClient } from './StarClient';
+import { BareClient, StarClient } from './StarClient';
 import { IUrlRequest, IUrlResponse } from './UrlInfo';
 import { IWebsiteResult } from './IWebsiteResult';
 import { IBrand } from './brands/IBrand';
@@ -56,5 +56,6 @@ export {
   AuthError,
   UnexpectedError,
   ValidationError,
-  IGroupCreatePayload
+  IGroupCreatePayload,
+  BareClient
 };
