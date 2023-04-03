@@ -26,6 +26,7 @@ import { AuthError } from './errors/AuthError';
 import { UnexpectedError } from './errors/UnexpectedError';
 import { ValidationError } from './errors/ValidationError';
 import { IGroupCreatePayload } from './groups/IGroupCreatePayload';
+import { Collection } from './scan/Collection';
 
 export {
   PagedResults,
@@ -57,5 +58,6 @@ export {
   UnexpectedError,
   ValidationError,
   IGroupCreatePayload,
-  BareClient
+  BareClient,
+  Collection
 };
