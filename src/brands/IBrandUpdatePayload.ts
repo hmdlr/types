@@ -5,6 +5,7 @@ export interface IBrandUpdatePayload extends Partial<IBrand> {
   domain?: string;
   authUrl?: string;
   favicon?: string;
+  pageLayout?: string;
   keywords?: string[];
   logo?: string;
   title?: string;

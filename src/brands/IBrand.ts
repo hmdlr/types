@@ -4,6 +4,7 @@ export interface IBrand {
   domain: string;
   authUrl: string;
   favicon: string;
+  pageLayout: string;
   logo: string;
   title: string;
 }
