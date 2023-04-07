@@ -8,7 +8,7 @@ import { IFile } from './storage/IFile';
 import { ImageType } from './enums/ImageType';
 import { AuthenticatedRequest } from './AuthenticatedRequest';
 import { IGroup } from './groups/IGroup';
-import { BareClient } from './BareClient';
+import { AxiosClient, BareClient } from './BareClient';
 import { IUrlRequest, IUrlResponse } from './UrlInfo';
 import { IWebsiteResult } from './IWebsiteResult';
 import { IBrand } from './brands/IBrand';
@@ -60,5 +60,6 @@ export {
   ValidationError,
   IGroupCreatePayload,
   BareClient,
+  AxiosClient,
   Collection
 };
