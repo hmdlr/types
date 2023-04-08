@@ -59,3 +59,21 @@ export interface PagedRequest {
   sortBy?: string;
   sortDir?: string;
 }
+
+export const buildPagedRequest = (req: PagedRequest): string => {
+  const { pageNumber, pageSize, sortBy, sortDir } = req;
+  const params = [];
+  if (pageNumber) {
+    params.push(`pageNumber=${pageNumber}`);
+  }
+  if (pageSize) {
+    params.push(`pageSize=${pageSize}`);
+  }
+  if (sortBy) {
+    params.push(`sortBy=${sortBy}`);
+  }
+  if (sortDir) {
+    params.push(`sortDir=${sortDir}`);
+  }
+  return params.join('&');
+}
