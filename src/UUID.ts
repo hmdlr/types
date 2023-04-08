@@ -17,4 +17,8 @@ export class UUID {
     // eslint-disable-next-line max-len
     return /^[0-9a-fA-F]{8}\b-[0-9a-fA-F]{4}\b-[0-9a-fA-F]{4}\b-[0-9a-fA-F]{4}\b-[0-9a-fA-F]{12}$/gm.test(id);
   }
+
+  public static get NIL(): string {
+    return '00000000-0000-0000-0000-000000000000';
+  }
 }
