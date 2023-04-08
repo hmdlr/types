@@ -1,6 +1,4 @@
-import { IBrand } from './IBrand';
-
-export interface IBrandUpdatePayload extends Partial<IBrand> {
+export interface IBrandUpdatePayload {
   name?: string;
   domain?: string;
   authUrl?: string;
