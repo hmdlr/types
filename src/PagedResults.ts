@@ -99,4 +99,27 @@ export class PagedResults<T> {
     results.count = count || arr.length;
     return results;
   }
+
+  static fromPagedJson<T>({
+    _items,
+    _count,
+    _pageNumber,
+    _pageSize,
+  }:
+  {
+    _items: Array<T>,
+    _count?: number,
+    _pageCount?: number,
+    _pageNumber: number,
+    _pageSize: number,
+  }) {
+    /* eslint-disable no-underscore-dangle */
+    return PagedResults.fromArray(
+      _items,
+      _pageNumber,
+      _pageSize,
+      _count
+    );
+    /* eslint-enable no-underscore-dangle */
+  }
 }
