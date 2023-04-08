@@ -72,7 +72,11 @@ export class PagedResults<T> {
 
   get items(): Array<T> {
     const start = (this.pageNumber - 1) * this.pageSize;
-    const end = start + this.pageSize;
+    const end = start + (
+      (this.pageSize !== -1)
+        ? this.pageSize
+        : this.count
+    );
     return this._items.slice(start, end);
   }
 
