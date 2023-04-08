@@ -13,9 +13,7 @@ import { SortDirection } from './enums/SortDirection';
  * ***sortDir***: The direction to sort by. Should be SortDirection array, separated by comma  <br />
  */
 export function buildPagedResults<T>(
-  req?: Request<unknown, unknown, unknown, {
-    pageNumber?: number; pageSize?: number; sortBy?: string; sortDir?: string;
-  }>
+  req?: Request<unknown, unknown, unknown, PagedRequest>
 ): PagedResults<T>;
 export function buildPagedResults<T>({
   query: {
@@ -34,9 +32,7 @@ export function buildPagedResults<T>({
   } }): PagedResults<T>;
 
 export function buildPagedResults<T>(
-  reqOrOpts?: Request<unknown, unknown, unknown, {
-    pageNumber?: number; pageSize?: number; sortBy?: string; sortDir?: string;
-  }> | {
+  reqOrOpts?: Request<unknown, unknown, unknown, PagedRequest> | {
     query?: {
       pageNumber?: number;
       pageSize?: number;
@@ -55,4 +51,11 @@ export function buildPagedResults<T>(
     ) ?? [];
   pagedResults.sort(sortBy as (keyof T)[], sortDir);
   return pagedResults;
+}
+
+export interface PagedRequest {
+  pageNumber?: number;
+  pageSize?: number;
+  sortBy?: string;
+  sortDir?: string;
 }
