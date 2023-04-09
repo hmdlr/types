@@ -5,6 +5,6 @@ export interface IBrandUpdatePayload {
   keywords?: string[];
   title?: string;
   pageLayout?: Buffer;
-  logo?: Buffer;
+  logo?: Express.Multer.File;
   favicon?: Buffer;
 }
