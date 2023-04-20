@@ -28,6 +28,7 @@ import { ValidationError } from './errors/ValidationError';
 import { IGroupCreatePayload } from './groups/IGroupCreatePayload';
 import { Collection } from './scan/Collection';
 import { IBrandUpdatePayload } from './brands/IBrandUpdatePayload';
+import { Metadata } from './protectedResources/Metadata';
 
 export {
   PagedResults,
@@ -63,5 +64,6 @@ export {
   IGroupCreatePayload,
   BareClient,
   AxiosClient,
-  Collection
+  Collection,
+  Metadata
 };
