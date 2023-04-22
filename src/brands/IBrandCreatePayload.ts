@@ -6,5 +6,4 @@ export interface IBrandCreatePayload extends Partial<IBrand> {
   name: string;
   title: string;
   keywords: string[];
-  configId: string
 }
