@@ -4,7 +4,10 @@ export interface IBrandUpdatePayload {
   authUrl?: string;
   keywords?: string[];
   title?: string;
+  /**
+   * The logo URL
+   */
+  logo?: string;
   pageLayout?: Buffer;
-  logo?: Express.Multer.File;
   favicon?: Buffer;
 }
