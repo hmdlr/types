@@ -30,6 +30,7 @@ import { Collection } from './scan/Collection';
 import { IBrandUpdatePayload } from './brands/IBrandUpdatePayload';
 import { Metadata } from './protectedResources/Metadata';
 import { RulesetPayload, SimilarityPayload, SimilarityResult } from './scan/Similarity';
+import { WithBearer } from './generics/Types';
 
 export {
   PagedResults,
@@ -69,5 +70,6 @@ export {
   Metadata,
   SimilarityResult,
   SimilarityPayload,
-  RulesetPayload
+  RulesetPayload,
+  WithBearer
 };
