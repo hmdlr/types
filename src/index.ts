@@ -29,6 +29,7 @@ import { IGroupCreatePayload } from './groups/IGroupCreatePayload';
 import { Collection } from './scan/Collection';
 import { IBrandUpdatePayload } from './brands/IBrandUpdatePayload';
 import { Metadata } from './protectedResources/Metadata';
+import { RulesetPayload, SimilarityPayload, SimilarityResult } from './scan/Similarity';
 
 export {
   PagedResults,
@@ -65,5 +66,8 @@ export {
   BareClient,
   AxiosClient,
   Collection,
-  Metadata
+  Metadata,
+  SimilarityResult,
+  SimilarityPayload,
+  RulesetPayload
 };
