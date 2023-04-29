@@ -1,6 +1,7 @@
 export interface SimilarityResult {
   idRuleset: string;
   idWinnerImage: string;
+  similarityPercentage: number;
 }
 
 export interface SimilarityPayload {
