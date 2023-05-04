@@ -5,5 +5,4 @@ export interface IBrandCreatePayload extends Partial<IBrand> {
   authUrl: string;
   name: string;
   title: string;
-  keywords: string[];
 }
