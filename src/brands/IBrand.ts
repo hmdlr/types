@@ -8,7 +8,7 @@ export interface IBrand {
    * The domain of the ruleset.
    * todo: make it an array
    */
-  domain: string;
+  domains: string;
   /**
    * The URL to the authentication page. Used to know where to send the crawler to.
    */

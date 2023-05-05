@@ -24,6 +24,7 @@ export interface SslCollection {
 
 export interface LinksCollection {
   linksCollection: {
+    numberOfLinks: number; // number of links in the page
     invalidPercentage: number; // [0...1] malformed links and `#`'s
     trickyPercentage: number; // [0...1] redirects to pages that are not the same as the original
   };
