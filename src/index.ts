@@ -26,7 +26,7 @@ import { AuthError } from './errors/AuthError';
 import { UnexpectedError } from './errors/UnexpectedError';
 import { ValidationError } from './errors/ValidationError';
 import { IGroupCreatePayload } from './groups/IGroupCreatePayload';
-import { Collection } from './scan/Collection';
+import { Collection, TrainCollection } from './scan/Collection';
 import { IBrandUpdatePayload } from './brands/IBrandUpdatePayload';
 import { Metadata } from './protectedResources/Metadata';
 import { RulesetPayload, SimilarityPayload, SimilarityResult } from './scan/Similarity';
@@ -67,6 +67,7 @@ export {
   BareClient,
   AxiosClient,
   Collection,
+  TrainCollection,
   Metadata,
   SimilarityResult,
   SimilarityPayload,
