@@ -33,3 +33,11 @@ export type Collection = UrlCollection
 & SslCollection
 & LinksCollection
 & ImagesCollection;
+
+export interface HtmlCollection {
+  htmlCollection: {
+    html: string;
+  }
+}
+
+export type TrainCollection = Collection & HtmlCollection;
