@@ -30,7 +30,7 @@ import { Collection, TrainCollection } from './scan/Collection';
 import { IBrandUpdatePayload } from './brands/IBrandUpdatePayload';
 import { Metadata } from './protectedResources/Metadata';
 import { RulesetPayload, SimilarityPayload, SimilarityResult } from './scan/Similarity';
-import { WithBearer } from './generics/Types';
+import { FileWithContentType, WithBearer } from './generics/Types';
 
 export {
   PagedResults,
@@ -72,5 +72,6 @@ export {
   SimilarityResult,
   SimilarityPayload,
   RulesetPayload,
-  WithBearer
+  WithBearer,
+  FileWithContentType
 };

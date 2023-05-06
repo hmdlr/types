@@ -4,3 +4,8 @@
 export type WithBearer<K> = K & {
   bearer: string
 };
+
+export interface FileWithContentType {
+  file: Buffer;
+  contentType: string;
+}

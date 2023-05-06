@@ -1,3 +1,5 @@
+import { FileWithContentType } from '../generics/Types';
+
 export interface IBrandUpdatePayload {
   name?: string;
   domain?: string;
@@ -7,5 +9,5 @@ export interface IBrandUpdatePayload {
    * The logo URL
    */
   logo?: string;
-  favicon?: Buffer;
+  favicon?: FileWithContentType;
 }
