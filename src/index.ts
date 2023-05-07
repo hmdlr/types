@@ -31,6 +31,7 @@ import { IBrandUpdatePayload } from './brands/IBrandUpdatePayload';
 import { Metadata } from './protectedResources/Metadata';
 import { RulesetPayload, SimilarityPayload, SimilarityResult } from './scan/Similarity';
 import { FileWithContentType, WithBearer } from './generics/Types';
+import { ComputedCollection } from './scan/ComputedCollection';
 
 export {
   PagedResults,
@@ -67,6 +68,7 @@ export {
   BareClient,
   AxiosClient,
   Collection,
+  ComputedCollection,
   TrainCollection,
   Metadata,
   SimilarityResult,
