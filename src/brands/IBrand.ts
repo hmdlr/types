@@ -19,6 +19,10 @@ export interface IBrand {
    */
   logo: string;
   /**
+   * The favicon of the ruleset.
+   */
+  favicon: string;
+  /**
    * The title found in the authentication page.
    */
   title: string;
