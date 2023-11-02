@@ -1,6 +1,8 @@
+import { IConfig } from '../configs/IConfig';
+
 export interface WebsiteInfo {
   /**
-   * The active config id in which this website(rule) belongs to.
+   * The active config in which this website(rule) belongs to.
    */
-  belongsToConfig: string | undefined;
+  belongsToConfig: IConfig | undefined;
 }
