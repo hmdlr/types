@@ -32,6 +32,7 @@ import { Metadata } from './protectedResources/Metadata';
 import { RulesetPayload, SimilarityPayload, SimilarityResult } from './scan/Similarity';
 import { FileWithContentType, WithBearer } from './generics/Types';
 import { ComputedCollection } from './scan/ComputedCollection';
+import { WebsiteInfo } from './scan/WebsiteInfo';
 
 export {
   PagedResults,
@@ -75,5 +76,6 @@ export {
   SimilarityPayload,
   RulesetPayload,
   WithBearer,
-  FileWithContentType
+  FileWithContentType,
+  WebsiteInfo
 };
