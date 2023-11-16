@@ -7,6 +7,11 @@ export interface Resource {
   id: string;
 
   /**
+   * The unique identifier of the group that the resource belongs to.
+   */
+  groupId: string;
+
+  /**
    * Resource's additional metadata.
    */
   metadata?: Metadata;
