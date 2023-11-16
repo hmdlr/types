@@ -6,6 +6,5 @@ export interface IConfig extends Resource {
   name: string;
   creatorId: string;
   logo: string;
-  groupId: string;
   brands: IBrand[];
 }
