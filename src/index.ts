@@ -33,6 +33,9 @@ import { RulesetPayload, SimilarityPayload, SimilarityResult } from './scan/Simi
 import { FileWithContentType, WithBearer } from './generics/Types';
 import { ComputedCollection } from './scan/ComputedCollection';
 import { WebsiteInfo } from './scan/WebsiteInfo';
+import { GroupDeletionPayload } from './groups/GroupDeletionPayload';
+import { ResourceDeletionPayload } from './protectedResources/ResourceDeletionPayload';
+import { ResourceChangeGroupPayload } from './protectedResources/ResourceChangeGroupPayload';
 
 export {
   PagedResults,
@@ -59,6 +62,8 @@ export {
   ResourceCreationPayload,
   ResourceCheckPayload,
   ResourceSharePayload,
+  ResourceChangeGroupPayload,
+  ResourceDeletionPayload,
   IConfig,
   IConfigCreatePayload,
   ConflictError,
@@ -67,6 +72,7 @@ export {
   UnexpectedError,
   ValidationError,
   IGroupCreatePayload,
+  GroupDeletionPayload,
   BareClient,
   AxiosClient,
   Collection,
