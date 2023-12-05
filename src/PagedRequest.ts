@@ -1,4 +1,5 @@
 import { Request } from 'express';
+import Joi from 'joi';
 import { PagedResults } from './PagedResults';
 import { SortDirection } from './enums/SortDirection';
 
@@ -22,14 +23,15 @@ export function buildPagedResults<T>({
     sortBy,
     sortDir,
   },
-} :
+}:
 {
   query?: {
     pageNumber?: number;
     pageSize?: number;
     sortBy?: string;
     sortDir?: string;
-  } }): PagedResults<T>;
+  }
+}): PagedResults<T>;
 
 export function buildPagedResults<T>(
   reqOrOpts?: Request<unknown, unknown, unknown, PagedRequest> | {
@@ -38,7 +40,8 @@ export function buildPagedResults<T>(
       pageSize?: number;
       sortBy?: string;
       sortDir?: string;
-    } }
+    }
+  }
 ): PagedResults<T> {
   const pagedResults = new PagedResults<T>();
 
@@ -60,6 +63,13 @@ export interface PagedRequest {
   sortDir?: string;
 }
 
+export const pagedRequestSchema = Joi.object().keys({
+  pageNumber: Joi.number().integer().min(1),
+  pageSize: Joi.number().integer(),
+  sortBy: Joi.string(),
+  sortDir: Joi.string(),
+});
+
 export const buildPagedRequest = (req: PagedRequest): string => {
   const { pageNumber, pageSize, sortBy, sortDir } = req;
   const params = [];
@@ -76,4 +86,4 @@ export const buildPagedRequest = (req: PagedRequest): string => {
     params.push(`sortDir=${sortDir}`);
   }
   return params.join('&');
-}
+};

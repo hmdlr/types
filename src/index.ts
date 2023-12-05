@@ -3,7 +3,7 @@ import { PagedResults } from './PagedResults';
 import { SortDirection } from './enums/SortDirection';
 import { IUser } from './IUser';
 import { UUID } from './UUID';
-import { buildPagedRequest, buildPagedResults, PagedRequest } from './PagedRequest';
+import { buildPagedRequest, buildPagedResults, PagedRequest, pagedRequestSchema } from './PagedRequest';
 import { IFile } from './storage/IFile';
 import { ImageType } from './enums/ImageType';
 import { AuthenticatedRequest } from './AuthenticatedRequest';
@@ -39,6 +39,7 @@ export {
   buildPagedResults,
   PagedRequest,
   buildPagedRequest,
+  pagedRequestSchema,
   SortDirection,
   UUID,
   Email,
