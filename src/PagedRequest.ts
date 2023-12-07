@@ -63,13 +63,6 @@ export interface PagedRequest {
   sortDir?: string;
 }
 
-export const pagedRequestSchema = Joi.object().keys({
-  pageNumber: Joi.number().integer().min(1),
-  pageSize: Joi.number().integer(),
-  sortBy: Joi.string(),
-  sortDir: Joi.string(),
-});
-
 export const buildPagedRequest = (req: PagedRequest): string => {
   const { pageNumber, pageSize, sortBy, sortDir } = req;
   const params = [];

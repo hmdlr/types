@@ -3,7 +3,7 @@ import { PagedResults } from './PagedResults';
 import { SortDirection } from './enums/SortDirection';
 import { IUser } from './IUser';
 import { UUID } from './UUID';
-import { buildPagedRequest, buildPagedResults, PagedRequest, pagedRequestSchema } from './PagedRequest';
+import { buildPagedRequest, buildPagedResults, PagedRequest } from './PagedRequest';
 import { IFile } from './storage/IFile';
 import { ImageType } from './enums/ImageType';
 import { AuthenticatedRequest } from './AuthenticatedRequest';
@@ -36,13 +36,13 @@ import { WebsiteInfo } from './scan/WebsiteInfo';
 import { GroupDeletionPayload } from './groups/GroupDeletionPayload';
 import { ResourceDeletionPayload } from './protectedResources/ResourceDeletionPayload';
 import { ResourceChangeGroupPayload } from './protectedResources/ResourceChangeGroupPayload';
+import { hmdlrJoiSchemas } from './joi/Validators';
 
 export {
   PagedResults,
   buildPagedResults,
   PagedRequest,
   buildPagedRequest,
-  pagedRequestSchema,
   SortDirection,
   UUID,
   Email,
@@ -84,5 +84,6 @@ export {
   RulesetPayload,
   WithBearer,
   FileWithContentType,
-  WebsiteInfo
+  WebsiteInfo,
+  hmdlrJoiSchemas
 };
