@@ -30,7 +30,7 @@ import { Collection, TrainCollection } from './scan/Collection';
 import { IBrandUpdatePayload } from './brands/IBrandUpdatePayload';
 import { Metadata } from './protectedResources/Metadata';
 import { RulesetPayload, SimilarityPayload, SimilarityResult } from './scan/Similarity';
-import { FileWithContentType, WithBearer } from './generics/Types';
+import { FileWithContentType, WithBearer, WithUser } from './generics/Types';
 import { ComputedCollection } from './scan/ComputedCollection';
 import { WebsiteInfo } from './scan/WebsiteInfo';
 import { GroupDeletionPayload } from './groups/GroupDeletionPayload';
@@ -83,6 +83,7 @@ export {
   SimilarityPayload,
   RulesetPayload,
   WithBearer,
+  WithUser,
   FileWithContentType,
   WebsiteInfo,
   hmdlrJoiSchemas
