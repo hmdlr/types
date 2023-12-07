@@ -24,6 +24,6 @@ export namespace hmdlrJoiSchemas {
    * The schema for the requested group.
    */
   export const withGroup = Joi.object<{
-    fromGroup: string
-  }>().keys({ fromGroup: Joi.string().required() });
+    fromGroup?: string
+  }>().keys({ fromGroup: Joi.string() });
 }
