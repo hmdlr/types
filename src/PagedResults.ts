@@ -80,6 +80,10 @@ export class PagedResults<T> {
     this._items = items;
   }
 
+  get itemsAll(): Array<T> {
+    return this._items || [];
+  }
+
   private calculatePageCount() {
     if (this.count && this.pageSize) {
       this._pageCount = Math.ceil(this.count / this.pageSize);
