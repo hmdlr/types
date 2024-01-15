@@ -1,42 +1,51 @@
-import { Email } from './Email';
-import { PagedResults } from './PagedResults';
-import { SortDirection } from './enums/SortDirection';
-import { IUser } from './IUser';
-import { UUID } from './UUID';
-import { buildPagedRequest, buildPagedResults, PagedRequest } from './PagedRequest';
-import { IFile } from './storage/IFile';
-import { ImageType } from './enums/ImageType';
-import { AuthenticatedRequest } from './AuthenticatedRequest';
-import { IGroup } from './groups/IGroup';
-import { AxiosClient, BareClient } from './BareClient';
-import { IUrlRequest, IUrlResponse } from './UrlInfo';
-import { IWebsiteResult } from './IWebsiteResult';
-import { IBrand } from './brands/IBrand';
-import { IBrandSummary } from './brands/IBrandSummary';
-import { IBrandCreatePayload } from './brands/IBrandCreatePayload';
-import { Resource } from './protectedResources/Resource';
-import { ResourceCreationPayload } from './protectedResources/ResourceCreationPayload';
-import { ResourceCheckPayload } from './protectedResources/ResourceCheckPayload';
-import { ResourceSharePayload } from './protectedResources/ResourceSharePayload';
-import { IConfig } from './configs/IConfig';
-import { IConfigCreatePayload } from './configs/IConfigCreatePayload';
-import { ConflictError } from './errors/ConflictError';
-import { NotFoundError } from './errors/NotFoundError';
-import { AuthError } from './errors/AuthError';
-import { UnexpectedError } from './errors/UnexpectedError';
-import { ValidationError } from './errors/ValidationError';
-import { IGroupCreatePayload } from './groups/IGroupCreatePayload';
-import { Collection, TrainCollection } from './scan/Collection';
-import { IBrandUpdatePayload } from './brands/IBrandUpdatePayload';
-import { Metadata } from './protectedResources/Metadata';
-import { RulesetPayload, SimilarityPayload, SimilarityResult } from './scan/Similarity';
-import { FileWithContentType, WithBearer, WithUser } from './generics/Types';
-import { ComputedCollection } from './scan/ComputedCollection';
-import { WebsiteInfo } from './scan/WebsiteInfo';
-import { GroupDeletionPayload } from './groups/GroupDeletionPayload';
-import { ResourceDeletionPayload } from './protectedResources/ResourceDeletionPayload';
-import { ResourceChangeGroupPayload } from './protectedResources/ResourceChangeGroupPayload';
-import { hmdlrJoiSchemas } from './joi/Validators';
+import { AuthenticatedRequest } from "./AuthenticatedRequest";
+import { AxiosClient, BareClient } from "./BareClient";
+import { IBrand } from "./brands/IBrand";
+import { IBrandCreatePayload } from "./brands/IBrandCreatePayload";
+import { IBrandSummary } from "./brands/IBrandSummary";
+import { IBrandUpdatePayload } from "./brands/IBrandUpdatePayload";
+import { IConfig } from "./configs/IConfig";
+import { IConfigCreatePayload } from "./configs/IConfigCreatePayload";
+import { IConfigUpdatePayload } from "./configs/IConfigUpdatePayload";
+import { Email } from "./Email";
+import { ImageType } from "./enums/ImageType";
+import { SortDirection } from "./enums/SortDirection";
+import { AuthError } from "./errors/AuthError";
+import { ConflictError } from "./errors/ConflictError";
+import { NotFoundError } from "./errors/NotFoundError";
+import { UnexpectedError } from "./errors/UnexpectedError";
+import { ValidationError } from "./errors/ValidationError";
+import { FileWithContentType, WithBearer, WithUser } from "./generics/Types";
+import { GroupDeletionPayload } from "./groups/GroupDeletionPayload";
+import { IGroup } from "./groups/IGroup";
+import { IGroupCreatePayload } from "./groups/IGroupCreatePayload";
+import { IUser } from "./IUser";
+import { IWebsiteResult } from "./IWebsiteResult";
+import { hmdlrJoiSchemas } from "./joi/Validators";
+import {
+  buildPagedRequest,
+  buildPagedResults,
+  PagedRequest,
+} from "./PagedRequest";
+import { PagedResults } from "./PagedResults";
+import { Metadata } from "./protectedResources/Metadata";
+import { Resource } from "./protectedResources/Resource";
+import { ResourceChangeGroupPayload } from "./protectedResources/ResourceChangeGroupPayload";
+import { ResourceCheckPayload } from "./protectedResources/ResourceCheckPayload";
+import { ResourceCreationPayload } from "./protectedResources/ResourceCreationPayload";
+import { ResourceDeletionPayload } from "./protectedResources/ResourceDeletionPayload";
+import { ResourceSharePayload } from "./protectedResources/ResourceSharePayload";
+import { Collection, TrainCollection } from "./scan/Collection";
+import { ComputedCollection } from "./scan/ComputedCollection";
+import {
+  RulesetPayload,
+  SimilarityPayload,
+  SimilarityResult,
+} from "./scan/Similarity";
+import { WebsiteInfo } from "./scan/WebsiteInfo";
+import { IFile } from "./storage/IFile";
+import { IUrlRequest, IUrlResponse } from "./UrlInfo";
+import { UUID } from "./UUID";
 
 export {
   PagedResults,
@@ -66,6 +75,7 @@ export {
   ResourceDeletionPayload,
   IConfig,
   IConfigCreatePayload,
+  IConfigUpdatePayload,
   ConflictError,
   NotFoundError,
   AuthError,
@@ -86,5 +96,5 @@ export {
   WithUser,
   FileWithContentType,
   WebsiteInfo,
-  hmdlrJoiSchemas
+  hmdlrJoiSchemas,
 };
