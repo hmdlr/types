@@ -1,3 +1,5 @@
+import { NetworkCall } from "./NetworkCall";
+
 export interface ImagesCollection {
   imagesCollection: {
     totalImageSpace: number; // [0...1] the total space that images take up on the page
@@ -30,15 +32,23 @@ export interface LinksCollection {
   };
 }
 
-export type Collection = UrlCollection
-& SslCollection
-& LinksCollection
-& ImagesCollection;
+export interface NetworkCollection {
+  networkCollection: {
+    badStatusPercentage: number; // [0...1] percentage of network requests that return a bad status
+    calls: NetworkCall[]; // network calls made by the page
+  };
+}
+
+export type Collection = UrlCollection &
+  SslCollection &
+  LinksCollection &
+  ImagesCollection &
+  NetworkCollection;
 
 export interface HtmlCollection {
   htmlCollection: {
     html: string;
-  }
+  };
 }
 
 export type TrainCollection = Collection & HtmlCollection;

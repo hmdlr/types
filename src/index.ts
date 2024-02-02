@@ -37,6 +37,7 @@ import { ResourceDeletionPayload } from "./protectedResources/ResourceDeletionPa
 import { ResourceSharePayload } from "./protectedResources/ResourceSharePayload";
 import { Collection, TrainCollection } from "./scan/Collection";
 import { ComputedCollection } from "./scan/ComputedCollection";
+import { NetworkCall } from "./scan/NetworkCall";
 import {
   RulesetPayload,
   SimilarityPayload,
@@ -97,4 +98,5 @@ export {
   FileWithContentType,
   WebsiteInfo,
   hmdlrJoiSchemas,
+  NetworkCall,
 };
