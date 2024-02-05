@@ -1,25 +1,34 @@
-import { LinksCollection, SslCollection } from './Collection';
+import {
+  CrawlerCollection,
+  FrequencyMapper,
+  FrequencyMapperFor,
+  ImagesCollection,
+  LinksCollection,
+  NetworkCollection,
+  SslCollection,
+  UrlCollection,
+} from "./Collection";
 
-export type ComputedCollection =
-    LinksCollection &
-    SslCollection &
-    { /* Overriding UrlCollection, we don't need the actual url here, just the match */
-      urlCollection: {
-        url: undefined,
-        brandNameContainedInUrl: boolean;
-        symbolsPercentage: number;
-        isIP: boolean;
-        shortened: boolean;
-        isPunycode: boolean;
-      }
-    } &
-    { /* Overriding ImagesCollection, we don't need the actual favicon / layout here, just the match percentage */
-      imagesCollection: {
-        favicon: undefined,
-        webpageLayout: undefined,
-        hasFavicon: boolean,
-        faviconMatched: boolean,
-        faviconSimilarity: number,
-        totalImageSpace: number,
-      }
-    };
+export type ComputedCollection = SslCollection & {
+  /* Overriding LinksCollection, we don't need the actual hrefs here, just the match percentage */
+  linksCollection: FrequencyMapperFor<
+    Omit<LinksCollection["linksCollection"], "hrefs">,
+    {
+      brandIdFromDomains: string; // from the active brands, which one is the most similar to the domain
+      brandIdFromAnchorsTexts: string; // from the active brands, which one is the most similar to the anchor texts
+    }
+  >;
+  /* Overriding UrlCollection, we don't need the actual url here, just the match */
+  urlCollection: FrequencyMapper<Omit<UrlCollection["urlCollection"], "url">>;
+  /* Overriding ImagesCollection, we don't need the actual favicon / layout here, just the match percentage */
+  imagesCollection: Omit<
+    ImagesCollection["imagesCollection"],
+    "favicon" | "webpageLayout"
+  >;
+  networkCollection: FrequencyMapper<
+    Omit<NetworkCollection["networkCollection"], "calls">
+  >;
+  crawlerCollection: FrequencyMapper<
+    Omit<CrawlerCollection["crawlerCollection"], "redirectUrl">
+  >;
+};
