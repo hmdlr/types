@@ -39,11 +39,18 @@ export interface NetworkCollection {
   };
 }
 
+export interface HtmlCollection {
+  htmlCollection: {
+    hasTwoTextInputs: boolean; // does the page have two text inputs?
+  };
+}
+
 export type Collection = UrlCollection &
   SslCollection &
   LinksCollection &
   ImagesCollection &
-  NetworkCollection;
+  NetworkCollection &
+  HtmlCollection;
 
 /**
  * A frequency mapper is a type that has a brandId property, and is used to map a collection to a brand,
@@ -61,12 +68,6 @@ export interface CrawlerCollection {
   crawlerCollection: {
     redirectUrl: string;
     crossDomainRedirect: boolean;
-  };
-}
-
-export interface HtmlCollection {
-  htmlCollection: {
-    html: string;
   };
 }
 
