@@ -58,11 +58,8 @@ export type Collection = UrlCollection &
  * Any FrequencyMapper will help in config-based scanning.
  */
 export type FrequencyMapper<T> = T & {
-  brandId: string;
+  brandId?: string;
 };
-
-export type FrequencyMapperFor<T, Props extends Record<string, string>> = T &
-  Props;
 
 export interface CrawlerCollection {
   crawlerCollection: {
