@@ -1,4 +1,4 @@
-import { SortDirection } from './enums/SortDirection';
+import { SortDirection } from "./enums/SortDirection";
 
 export class PagedResults<T> {
   private _count?: number;
@@ -31,9 +31,9 @@ export class PagedResults<T> {
   sort(columns?: (keyof T)[], directions?: SortDirection[]): void {
     this._sortBy = columns || [];
     this._sortDir = [
-      ...directions || [],
+      ...(directions || []),
       ...Array(
-        Math.max(((columns.length || 0) - (directions.length || 0)), 0)
+        Math.max((columns.length || 0) - (directions.length || 0), 0),
       ).fill(SortDirection.Asc),
     ];
     // reduce sortDir to have the same length as sortBy
@@ -48,7 +48,10 @@ export class PagedResults<T> {
     return this._sortDir;
   }
 
-  static newInstance<T, K>(data: Array<K>, mapper: ((obj: K) => T)): PagedResults<T> {
+  static newInstance<T, K>(
+    data: Array<K>,
+    mapper: (obj: K) => T,
+  ): PagedResults<T> {
     const results = new PagedResults<T>();
     results.items = data.map(mapper);
     return results;
@@ -71,9 +74,7 @@ export class PagedResults<T> {
   }
 
   get items(): Array<T> {
-    const start = (this.pageNumber - 1) * this.pageSize;
-    const end = this.pageSize !== -1 ? start + this.pageSize : this._items?.length || 0;
-    return this._items?.slice(start, end) || [];
+    return this._items || [];
   }
 
   set items(items: Array<T>) {
@@ -94,7 +95,7 @@ export class PagedResults<T> {
     arr: Array<A>,
     pageNumber?: number,
     pageSize?: number,
-    count?: number
+    count?: number,
   ): PagedResults<A> {
     const results = new PagedResults<A>();
     results.items = arr;
@@ -109,21 +110,18 @@ export class PagedResults<T> {
     _count,
     _pageNumber,
     _pageSize,
-  }:
-  {
-    _items: Array<T>,
-    _count?: number,
-    _pageCount?: number,
-    _pageNumber: number,
-    _pageSize: number,
+  }: {
+    _items: Array<T>;
+    _count?: number;
+    _pageCount?: number;
+    _pageNumber: number;
+    _pageSize: number;
   }) {
-    /* eslint-disable no-underscore-dangle */
-    return PagedResults.fromArray(
-      _items,
-      _pageNumber,
-      _pageSize,
-      _count
-    );
-    /* eslint-enable no-underscore-dangle */
+    return PagedResults.fromArray(_items, _pageNumber, _pageSize, _count);
+  }
+
+  public infinite(): PagedResults<T> {
+    this._pageSize = -1;
+    return this;
   }
 }
