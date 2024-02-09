@@ -36,7 +36,16 @@ import { ResourceCreationPayload } from "./protectedResources/ResourceCreationPa
 import { ResourceDeletionPayload } from "./protectedResources/ResourceDeletionPayload";
 import { ResourceSharePayload } from "./protectedResources/ResourceSharePayload";
 import { Collection, TrainCollection } from "./scan/Collection";
-import { ComputedCollection } from "./scan/ComputedCollection";
+import {
+  ComputedCollection,
+  ComputedCrawlerCollection,
+  ComputedHtmlCollection,
+  ComputedImagesCollection,
+  ComputedLinksCollection,
+  ComputedNetworkCollection,
+  ComputedSslCollection,
+  ComputedUrlCollection,
+} from "./scan/ComputedCollection";
 import { NetworkCall } from "./scan/NetworkCall";
 import {
   RulesetPayload,
@@ -99,4 +108,11 @@ export {
   WebsiteInfo,
   hmdlrJoiSchemas,
   NetworkCall,
+  ComputedLinksCollection,
+  ComputedUrlCollection,
+  ComputedImagesCollection,
+  ComputedNetworkCollection,
+  ComputedCrawlerCollection,
+  ComputedSslCollection,
+  ComputedHtmlCollection,
 };
