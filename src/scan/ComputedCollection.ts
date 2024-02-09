@@ -1,7 +1,6 @@
 import {
   CrawlerCollection,
   FrequencyMapper,
-  FrequencyMapperFor,
   HtmlCollection,
   ImagesCollection,
   LinksCollection,
@@ -22,12 +21,8 @@ export type ComputedCollection = ComputedSslCollection &
     crawlerCollection: ComputedCrawlerCollection;
   };
 
-export type ComputedLinksCollection = FrequencyMapperFor<
-  Omit<LinksCollection["linksCollection"], "hrefs">,
-  {
-    brandIdFromDomains: string; // from the active brands, which one is the most similar to the domain
-    brandIdFromAnchorsTexts: string; // from the active brands, which one is the most similar to the anchor texts
-  }
+export type ComputedLinksCollection = FrequencyMapper<
+  Omit<LinksCollection["linksCollection"], "hrefs">
 >;
 
 export type ComputedUrlCollection = FrequencyMapper<
