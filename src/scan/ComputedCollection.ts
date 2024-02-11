@@ -18,7 +18,7 @@ export type ComputedCollection = ComputedSslCollection &
     /* Overriding ImagesCollection, we don't need the actual favicon / layout here, just the match percentage */
     imagesCollection: ComputedImagesCollection;
     networkCollection: ComputedNetworkCollection;
-    crawlerCollection: ComputedCrawlerCollection;
+    // crawlerCollection: ComputedCrawlerCollection;
   };
 
 export type ComputedLinksCollection = FrequencyMapper<
