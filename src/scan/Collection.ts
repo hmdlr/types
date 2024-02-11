@@ -3,8 +3,7 @@ import { NetworkCall } from "./NetworkCall";
 export interface ImagesCollection {
   imagesCollection: {
     totalImageSpace: number; // [0...1] the total space that images take up on the page
-    webpageLayout: string | undefined; // base64 encoded image of the webpage layout
-    favicon: string | undefined; // base64 encoded image of the favicon
+    hasFavicon: boolean; // does the page have a favicon?
   };
 }
 

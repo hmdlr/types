@@ -29,11 +29,6 @@ export type ComputedUrlCollection = FrequencyMapper<
   Omit<UrlCollection["urlCollection"], "url">
 >;
 
-export type ComputedImagesCollection = Omit<
-  ImagesCollection["imagesCollection"],
-  "favicon" | "webpageLayout"
->;
-
 export type ComputedNetworkCollection = FrequencyMapper<
   Omit<NetworkCollection["networkCollection"], "calls">
 >;
@@ -44,3 +39,4 @@ export type ComputedCrawlerCollection = FrequencyMapper<
 
 export type ComputedSslCollection = SslCollection;
 export type ComputedHtmlCollection = HtmlCollection;
+export type ComputedImagesCollection = ImagesCollection;
