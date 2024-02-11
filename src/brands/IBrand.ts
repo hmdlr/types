@@ -26,6 +26,13 @@ export interface IBrand {
    * The title found in the authentication page.
    */
   title: string;
+
+  /**
+   * The known network domains of the brand.
+   * e.g for facebook it might be the domain of the CDN, the domain of the API, etc.
+   * For maximum precision, we should store all the domains we know about.
+   */
+  networkDomains: string[];
   /**
    * The known logos of the brand.
    * e.g for facebook it might be the round logo, the square logo, the logo with the text, etc.
