@@ -41,6 +41,7 @@ export interface NetworkCollection {
 export interface HtmlCollection {
   htmlCollection: {
     hasTwoTextInputs: boolean; // does the page have two text inputs?
+    texts: string[]; // text found in the page
   };
 }
 
