@@ -42,6 +42,11 @@ export type ComputedCrawlerCollection = {
   >;
 };
 
+export type ComputedHtmlCollection = {
+  htmlCollection: FrequencyMapper<
+    Omit<HtmlCollection["htmlCollection"], "texts">
+  >;
+};
+
 export type ComputedSslCollection = SslCollection;
-export type ComputedHtmlCollection = HtmlCollection;
 export type ComputedImagesCollection = ImagesCollection;
