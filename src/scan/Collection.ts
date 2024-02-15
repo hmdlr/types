@@ -42,6 +42,7 @@ export interface HtmlCollection {
   htmlCollection: {
     hasTwoTextInputs: boolean; // does the page have two text inputs?
     texts: string[]; // text found in the page
+    pageTitle: string; // title of the page
   };
 }
 
@@ -56,9 +57,10 @@ export type Collection = UrlCollection &
  * A frequency mapper is a type that has a brandId property, and is used to map a collection to a brand,
  * if any similarities were found.
  * Any FrequencyMapper will help in config-based scanning.
+ * We also allow the brandId to be an array, in case we want to map a collection to multiple brands.
  */
 export type FrequencyMapper<T> = T & {
-  brandId?: string;
+  brandId?: string[];
 };
 
 export interface CrawlerCollection {

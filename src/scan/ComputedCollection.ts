@@ -44,7 +44,7 @@ export type ComputedCrawlerCollection = {
 
 export type ComputedHtmlCollection = {
   htmlCollection: FrequencyMapper<
-    Omit<HtmlCollection["htmlCollection"], "texts">
+    Omit<HtmlCollection["htmlCollection"], "texts" | "pageTitle">
   >;
 };
 
