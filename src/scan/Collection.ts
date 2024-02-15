@@ -60,7 +60,7 @@ export type Collection = UrlCollection &
  * We also allow the brandId to be an array, in case we want to map a collection to multiple brands.
  */
 export type FrequencyMapper<T> = T & {
-  brandId?: string[];
+  brandIds?: string[];
 };
 
 export interface CrawlerCollection {
