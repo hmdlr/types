@@ -44,6 +44,7 @@ export interface HtmlCollection {
     texts: string[]; // text found in the page
     pageTitle: string; // title of the page
     crossDomainForm: boolean; // does the page have a form that points to a different domain?
+    hasOwnText: boolean; // does the page have its own visible, selectible text?
   };
 }
 
