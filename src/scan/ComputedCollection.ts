@@ -45,7 +45,9 @@ export type ComputedCrawlerCollection = {
 export type ComputedHtmlCollection = {
   htmlCollection: FrequencyMapper<
     Omit<HtmlCollection["htmlCollection"], "texts" | "pageTitle">
-  >;
+  > & {
+    aLoTOfText: boolean;
+  };
 };
 
 export type ComputedSslCollection = SslCollection;
