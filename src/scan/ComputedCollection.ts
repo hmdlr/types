@@ -46,7 +46,7 @@ export type ComputedHtmlCollection = {
   htmlCollection: FrequencyMapper<
     Omit<HtmlCollection["htmlCollection"], "texts" | "pageTitle">
   > & {
-    aLoTOfText: boolean;
+    aLotOfText: boolean;
   };
 };
 
