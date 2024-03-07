@@ -40,7 +40,7 @@ export interface NetworkCollection {
 
 export interface HtmlCollection {
   htmlCollection: {
-    hasTwoTextInputs: boolean; // does the page have two text inputs?
+    hasTwoTextInputsOrPassword: boolean; // does the page have two text inputs or a password input?
     texts: string[]; // text found in the page
     pageTitle: string; // title of the page
     crossDomainForm: boolean; // does the page have a form that points to a different domain?
