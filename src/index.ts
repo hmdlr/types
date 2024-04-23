@@ -2,6 +2,7 @@ import { AuthenticatedRequest } from "./AuthenticatedRequest";
 import { AxiosClient, BareClient } from "./BareClient";
 import { IBrand } from "./brands/IBrand";
 import { IBrandCreatePayload } from "./brands/IBrandCreatePayload";
+import { IBrandGroupDTO } from "./brands/IBrandGroupDTO";
 import { IBrandSummary } from "./brands/IBrandSummary";
 import { IBrandUpdatePayload } from "./brands/IBrandUpdatePayload";
 import { IConfig } from "./configs/IConfig";
@@ -78,6 +79,7 @@ export {
   IBrandSummary,
   IBrandCreatePayload,
   IBrandUpdatePayload,
+  IBrandGroupDTO,
   Resource,
   ResourceCreationPayload,
   ResourceCheckPayload,
