@@ -6,6 +6,7 @@ import { IBrandSummary } from "./brands/IBrandSummary";
 import { IBrandUpdatePayload } from "./brands/IBrandUpdatePayload";
 import { IConfig } from "./configs/IConfig";
 import { IConfigCreatePayload } from "./configs/IConfigCreatePayload";
+import { IConfigGroupDTO } from "./configs/IConfigGroupDTO";
 import { IConfigUpdatePayload } from "./configs/IConfigUpdatePayload";
 import { Email } from "./Email";
 import { ImageType } from "./enums/ImageType";
@@ -86,6 +87,7 @@ export {
   IConfig,
   IConfigCreatePayload,
   IConfigUpdatePayload,
+  IConfigGroupDTO,
   ConflictError,
   NotFoundError,
   AuthError,
